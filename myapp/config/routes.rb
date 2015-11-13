@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/' => 'pages#home'
   get '/faq' => 'pages#faq'
 
+  get '/generate' => 'pages#generate'
 
 end

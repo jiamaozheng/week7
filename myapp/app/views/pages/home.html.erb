@@ -3,7 +3,9 @@
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 
-<p>The current token is: <%= @token %></p>
+<%= link_to "Generate New Token", generate_path, remote: true, class: 'btn btn-info' %>
+
+<p>The current token is: <span id="token"><%= @token %></span></p>
 
 <p>
   <%= link_to "FAQ", faq_path %>
