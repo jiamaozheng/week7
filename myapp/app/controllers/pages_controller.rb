@@ -7,6 +7,6 @@ class PagesController < ApplicationController
   end
 
   def faq
-
+    @token = open("http://localhost:4000/token").read
   end
 end
